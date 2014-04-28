@@ -1,0 +1,7 @@
+language: objective-c
+xcode_project: Tests/FXForms/FXFormsTests.xcodeproj
+xcode_scheme: FXForms
+xcode_sdk: iphonesimulator7.0
+before_script:
+  - brew update
+  - brew upgrade xctool
