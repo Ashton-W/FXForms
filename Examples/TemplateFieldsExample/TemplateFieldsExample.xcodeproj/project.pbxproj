@@ -17,6 +17,24 @@
 		0169995C18A1663700E7085F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0169995B18A1663700E7085F /* Images.xcassets */; };
 		0169997B18A1664800E7085F /* FXForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 0169997A18A1664800E7085F /* FXForms.m */; };
 		0178250818E1A0AE004C3815 /* RootFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0178250718E1A0AE004C3815 /* RootFormViewController.m */; };
+		46084329199F65A50012DAED /* FXFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 460842FB199F65A50012DAED /* FXFormBaseCell.m */; };
+		4608432A199F65A50012DAED /* FXFormDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 460842FE199F65A50012DAED /* FXFormDatePickerCell.m */; };
+		4608432B199F65A50012DAED /* FXFormDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084300199F65A50012DAED /* FXFormDefaultCell.m */; };
+		4608432C199F65A50012DAED /* FXFormImagePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084303199F65A50012DAED /* FXFormImagePickerCell.m */; };
+		4608432D199F65A50012DAED /* FXFormOptionPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084305199F65A50012DAED /* FXFormOptionPickerCell.m */; };
+		4608432E199F65A50012DAED /* FXFormOptionSegmentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084307199F65A50012DAED /* FXFormOptionSegmentsCell.m */; };
+		4608432F199F65A50012DAED /* FXFormSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084309199F65A50012DAED /* FXFormSliderCell.m */; };
+		46084330199F65A50012DAED /* FXFormStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608430B199F65A50012DAED /* FXFormStepperCell.m */; };
+		46084331199F65A50012DAED /* FXFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608430D199F65A50012DAED /* FXFormSwitchCell.m */; };
+		46084332199F65A50012DAED /* FXFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608430F199F65A50012DAED /* FXFormTextFieldCell.m */; };
+		46084333199F65A50012DAED /* FXFormTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084311199F65A50012DAED /* FXFormTextViewCell.m */; };
+		46084334199F65A50012DAED /* FXFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084314199F65A50012DAED /* FXFormController.m */; };
+		46084335199F65A50012DAED /* FXFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084319199F65A50012DAED /* FXFormViewController.m */; };
+		46084336199F65A50012DAED /* FXFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4608431E199F65A50012DAED /* FXFormField.m */; };
+		46084337199F65A50012DAED /* NSObject+FXForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084321199F65A50012DAED /* NSObject+FXForms.m */; };
+		46084338199F65A50012DAED /* FXFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084324199F65A50012DAED /* FXFormSection.m */; };
+		46084339199F65A50012DAED /* FXOptionsForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084326199F65A50012DAED /* FXOptionsForm.m */; };
+		4608433A199F65A50012DAED /* FXTemplateForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 46084328199F65A50012DAED /* FXTemplateForm.m */; };
 		CC566AAC18D76956002F2751 /* ISO3166CountryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC566AAB18D76956002F2751 /* ISO3166CountryValueTransformer.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +57,51 @@
 		0169997A18A1664800E7085F /* FXForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXForms.m; sourceTree = "<group>"; };
 		0178250618E1A0AE004C3815 /* RootFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootFormViewController.h; sourceTree = "<group>"; };
 		0178250718E1A0AE004C3815 /* RootFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootFormViewController.m; sourceTree = "<group>"; };
+		460842F8199F65A50012DAED /* FXForms_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXForms_Private.h; sourceTree = "<group>"; };
+		460842FA199F65A50012DAED /* FXFormBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormBaseCell.h; sourceTree = "<group>"; };
+		460842FB199F65A50012DAED /* FXFormBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormBaseCell.m; sourceTree = "<group>"; };
+		460842FC199F65A50012DAED /* FXFormBaseCell_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormBaseCell_Private.h; sourceTree = "<group>"; };
+		460842FD199F65A50012DAED /* FXFormDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormDatePickerCell.h; sourceTree = "<group>"; };
+		460842FE199F65A50012DAED /* FXFormDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormDatePickerCell.m; sourceTree = "<group>"; };
+		460842FF199F65A50012DAED /* FXFormDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormDefaultCell.h; sourceTree = "<group>"; };
+		46084300199F65A50012DAED /* FXFormDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormDefaultCell.m; sourceTree = "<group>"; };
+		46084301199F65A50012DAED /* FXFormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormFieldCell.h; sourceTree = "<group>"; };
+		46084302199F65A50012DAED /* FXFormImagePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormImagePickerCell.h; sourceTree = "<group>"; };
+		46084303199F65A50012DAED /* FXFormImagePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormImagePickerCell.m; sourceTree = "<group>"; };
+		46084304199F65A50012DAED /* FXFormOptionPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormOptionPickerCell.h; sourceTree = "<group>"; };
+		46084305199F65A50012DAED /* FXFormOptionPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormOptionPickerCell.m; sourceTree = "<group>"; };
+		46084306199F65A50012DAED /* FXFormOptionSegmentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormOptionSegmentsCell.h; sourceTree = "<group>"; };
+		46084307199F65A50012DAED /* FXFormOptionSegmentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormOptionSegmentsCell.m; sourceTree = "<group>"; };
+		46084308199F65A50012DAED /* FXFormSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormSliderCell.h; sourceTree = "<group>"; };
+		46084309199F65A50012DAED /* FXFormSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormSliderCell.m; sourceTree = "<group>"; };
+		4608430A199F65A50012DAED /* FXFormStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormStepperCell.h; sourceTree = "<group>"; };
+		4608430B199F65A50012DAED /* FXFormStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormStepperCell.m; sourceTree = "<group>"; };
+		4608430C199F65A50012DAED /* FXFormSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormSwitchCell.h; sourceTree = "<group>"; };
+		4608430D199F65A50012DAED /* FXFormSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormSwitchCell.m; sourceTree = "<group>"; };
+		4608430E199F65A50012DAED /* FXFormTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormTextFieldCell.h; sourceTree = "<group>"; };
+		4608430F199F65A50012DAED /* FXFormTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormTextFieldCell.m; sourceTree = "<group>"; };
+		46084310199F65A50012DAED /* FXFormTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormTextViewCell.h; sourceTree = "<group>"; };
+		46084311199F65A50012DAED /* FXFormTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormTextViewCell.m; sourceTree = "<group>"; };
+		46084313199F65A50012DAED /* FXFormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormController.h; sourceTree = "<group>"; };
+		46084314199F65A50012DAED /* FXFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormController.m; sourceTree = "<group>"; };
+		46084315199F65A50012DAED /* FXFormController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormController_Private.h; sourceTree = "<group>"; };
+		46084316199F65A50012DAED /* FXFormControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormControllerDelegate.h; sourceTree = "<group>"; };
+		46084317199F65A50012DAED /* FXFormFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormFieldViewController.h; sourceTree = "<group>"; };
+		46084318199F65A50012DAED /* FXFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormViewController.h; sourceTree = "<group>"; };
+		46084319199F65A50012DAED /* FXFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormViewController.m; sourceTree = "<group>"; };
+		4608431B199F65A50012DAED /* FXForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXForm.h; sourceTree = "<group>"; };
+		4608431C199F65A50012DAED /* FXForm_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXForm_Private.h; sourceTree = "<group>"; };
+		4608431D199F65A50012DAED /* FXFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormField.h; sourceTree = "<group>"; };
+		4608431E199F65A50012DAED /* FXFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormField.m; sourceTree = "<group>"; };
+		4608431F199F65A50012DAED /* FXFormField_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormField_Private.h; sourceTree = "<group>"; };
+		46084320199F65A50012DAED /* NSObject+FXForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FXForms.h"; sourceTree = "<group>"; };
+		46084321199F65A50012DAED /* NSObject+FXForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FXForms.m"; sourceTree = "<group>"; };
+		46084323199F65A50012DAED /* FXFormSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXFormSection.h; sourceTree = "<group>"; };
+		46084324199F65A50012DAED /* FXFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXFormSection.m; sourceTree = "<group>"; };
+		46084325199F65A50012DAED /* FXOptionsForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXOptionsForm.h; sourceTree = "<group>"; };
+		46084326199F65A50012DAED /* FXOptionsForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXOptionsForm.m; sourceTree = "<group>"; };
+		46084327199F65A50012DAED /* FXTemplateForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXTemplateForm.h; sourceTree = "<group>"; };
+		46084328199F65A50012DAED /* FXTemplateForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXTemplateForm.m; sourceTree = "<group>"; };
 		CC566AAA18D76956002F2751 /* ISO3166CountryValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO3166CountryValueTransformer.h; sourceTree = "<group>"; };
 		CC566AAB18D76956002F2751 /* ISO3166CountryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO3166CountryValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +175,10 @@
 		0169997818A1664800E7085F /* FXForms */ = {
 			isa = PBXGroup;
 			children = (
+				460842F7199F65A50012DAED /* Private */,
+				460842F9199F65A50012DAED /* Views */,
+				46084312199F65A50012DAED /* Controllers */,
+				4608431A199F65A50012DAED /* Models */,
 				0169997918A1664800E7085F /* FXForms.h */,
 				0169997A18A1664800E7085F /* FXForms.m */,
 			);
@@ -146,6 +213,87 @@
 				0178250718E1A0AE004C3815 /* RootFormViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		460842F7199F65A50012DAED /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				460842F8199F65A50012DAED /* FXForms_Private.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		460842F9199F65A50012DAED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				460842FA199F65A50012DAED /* FXFormBaseCell.h */,
+				460842FB199F65A50012DAED /* FXFormBaseCell.m */,
+				460842FC199F65A50012DAED /* FXFormBaseCell_Private.h */,
+				460842FD199F65A50012DAED /* FXFormDatePickerCell.h */,
+				460842FE199F65A50012DAED /* FXFormDatePickerCell.m */,
+				460842FF199F65A50012DAED /* FXFormDefaultCell.h */,
+				46084300199F65A50012DAED /* FXFormDefaultCell.m */,
+				46084301199F65A50012DAED /* FXFormFieldCell.h */,
+				46084302199F65A50012DAED /* FXFormImagePickerCell.h */,
+				46084303199F65A50012DAED /* FXFormImagePickerCell.m */,
+				46084304199F65A50012DAED /* FXFormOptionPickerCell.h */,
+				46084305199F65A50012DAED /* FXFormOptionPickerCell.m */,
+				46084306199F65A50012DAED /* FXFormOptionSegmentsCell.h */,
+				46084307199F65A50012DAED /* FXFormOptionSegmentsCell.m */,
+				46084308199F65A50012DAED /* FXFormSliderCell.h */,
+				46084309199F65A50012DAED /* FXFormSliderCell.m */,
+				4608430A199F65A50012DAED /* FXFormStepperCell.h */,
+				4608430B199F65A50012DAED /* FXFormStepperCell.m */,
+				4608430C199F65A50012DAED /* FXFormSwitchCell.h */,
+				4608430D199F65A50012DAED /* FXFormSwitchCell.m */,
+				4608430E199F65A50012DAED /* FXFormTextFieldCell.h */,
+				4608430F199F65A50012DAED /* FXFormTextFieldCell.m */,
+				46084310199F65A50012DAED /* FXFormTextViewCell.h */,
+				46084311199F65A50012DAED /* FXFormTextViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46084312199F65A50012DAED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46084313199F65A50012DAED /* FXFormController.h */,
+				46084314199F65A50012DAED /* FXFormController.m */,
+				46084315199F65A50012DAED /* FXFormController_Private.h */,
+				46084316199F65A50012DAED /* FXFormControllerDelegate.h */,
+				46084317199F65A50012DAED /* FXFormFieldViewController.h */,
+				46084318199F65A50012DAED /* FXFormViewController.h */,
+				46084319199F65A50012DAED /* FXFormViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4608431A199F65A50012DAED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4608431B199F65A50012DAED /* FXForm.h */,
+				4608431C199F65A50012DAED /* FXForm_Private.h */,
+				4608431D199F65A50012DAED /* FXFormField.h */,
+				4608431E199F65A50012DAED /* FXFormField.m */,
+				4608431F199F65A50012DAED /* FXFormField_Private.h */,
+				46084320199F65A50012DAED /* NSObject+FXForms.h */,
+				46084321199F65A50012DAED /* NSObject+FXForms.m */,
+				46084322199F65A50012DAED /* Private */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46084322199F65A50012DAED /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				46084323199F65A50012DAED /* FXFormSection.h */,
+				46084324199F65A50012DAED /* FXFormSection.m */,
+				46084325199F65A50012DAED /* FXOptionsForm.h */,
+				46084326199F65A50012DAED /* FXOptionsForm.m */,
+				46084327199F65A50012DAED /* FXTemplateForm.h */,
+				46084328199F65A50012DAED /* FXTemplateForm.m */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,11 +360,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC566AAC18D76956002F2751 /* ISO3166CountryValueTransformer.m in Sources */,
+				46084338199F65A50012DAED /* FXFormSection.m in Sources */,
 				0169995A18A1663700E7085F /* AppDelegate.m in Sources */,
+				46084336199F65A50012DAED /* FXFormField.m in Sources */,
+				46084337199F65A50012DAED /* NSObject+FXForms.m in Sources */,
+				4608432E199F65A50012DAED /* FXFormOptionSegmentsCell.m in Sources */,
+				4608432F199F65A50012DAED /* FXFormSliderCell.m in Sources */,
 				0178250818E1A0AE004C3815 /* RootFormViewController.m in Sources */,
+				46084329199F65A50012DAED /* FXFormBaseCell.m in Sources */,
+				4608433A199F65A50012DAED /* FXTemplateForm.m in Sources */,
 				0169997B18A1664800E7085F /* FXForms.m in Sources */,
+				46084334199F65A50012DAED /* FXFormController.m in Sources */,
+				46084335199F65A50012DAED /* FXFormViewController.m in Sources */,
+				4608432B199F65A50012DAED /* FXFormDefaultCell.m in Sources */,
+				46084333199F65A50012DAED /* FXFormTextViewCell.m in Sources */,
+				46084331199F65A50012DAED /* FXFormSwitchCell.m in Sources */,
+				46084339199F65A50012DAED /* FXOptionsForm.m in Sources */,
 				0169995618A1663700E7085F /* main.m in Sources */,
+				46084330199F65A50012DAED /* FXFormStepperCell.m in Sources */,
+				46084332199F65A50012DAED /* FXFormTextFieldCell.m in Sources */,
+				4608432C199F65A50012DAED /* FXFormImagePickerCell.m in Sources */,
+				4608432D199F65A50012DAED /* FXFormOptionPickerCell.m in Sources */,
 				0168186818C5E7AF00273F1C /* RootForm.m in Sources */,
+				4608432A199F65A50012DAED /* FXFormDatePickerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

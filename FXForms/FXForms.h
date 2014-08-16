@@ -77,203 +77,27 @@ static NSString *const FXFormFieldTypeImage = @"image";
 
 #endif
 
-
-#pragma mark -
-#pragma mark Models
-
-
-@interface NSObject (FXForms)
-
-- (NSString *)fieldDescription;
-
-@end
-
-
-@protocol FXForm <NSObject>
-@optional
-
-- (NSArray *)fields;
-- (NSArray *)extraFields;
-- (NSArray *)excludedFields;
-
-// informal protocol:
-
-// - (NSDictionary *)<fieldKey>Field
-// - (NSString *)<fieldKey>FieldDescription
-
-@end
-
-
-@interface FXFormField : NSObject
-
-@property (nonatomic, readonly) id<FXForm> form;
-@property (nonatomic, readonly) NSString *key;
-@property (nonatomic, readonly) NSString *type;
-@property (nonatomic, readonly) NSString *title;
-@property (nonatomic, readonly) id placeholder;
-@property (nonatomic, readonly) NSDictionary *fieldTemplate;
-@property (nonatomic, readonly) BOOL isSortable;
-@property (nonatomic, readonly) BOOL isInline;
-@property (nonatomic, readonly) Class valueClass;
-@property (nonatomic, readonly) Class viewController;
-@property (nonatomic, readonly) void (^action)(id sender);
-@property (nonatomic, readonly) id segue;
-@property (nonatomic, strong) id value;
-
-- (NSUInteger)optionCount;
-- (id)optionAtIndex:(NSUInteger)index;
-- (NSUInteger)indexOfOption:(id)option;
-- (NSString *)optionDescriptionAtIndex:(NSUInteger)index;
-- (void)setOptionSelected:(BOOL)selected atIndex:(NSUInteger)index;
-- (BOOL)isOptionSelectedAtIndex:(NSUInteger)index;
-
-@end
-
-
-#pragma mark -
-#pragma mark Controllers
-
-
-@protocol FXFormControllerDelegate <UITableViewDelegate>
-
-@end
-
-
-@interface FXFormController : NSObject
-
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) FXFormController *parentFormController;
-@property (nonatomic, weak) id<FXFormControllerDelegate> delegate;
-@property (nonatomic, strong) id<FXForm> form;
-
-- (NSUInteger)numberOfSections;
-- (NSUInteger)numberOfFieldsInSection:(NSUInteger)section;
-- (FXFormField *)fieldForIndexPath:(NSIndexPath *)indexPath;
-- (NSIndexPath *)indexPathForField:(FXFormField *)field;
-- (void)enumerateFieldsWithBlock:(void (^)(FXFormField *field, NSIndexPath *indexPath))block;
-
-- (Class)cellClassForField:(FXFormField *)field;
-- (void)registerDefaultFieldCellClass:(Class)cellClass;
-- (void)registerCellClass:(Class)cellClass forFieldType:(NSString *)fieldType;
-- (void)registerCellClass:(Class)cellClass forFieldClass:(Class)fieldClass;
-
-- (Class)viewControllerClassForField:(FXFormField *)field;
-- (void)registerDefaultViewControllerClass:(Class)controllerClass;
-- (void)registerViewControllerClass:(Class)controllerClass forFieldType:(NSString *)fieldType;
-- (void)registerViewControllerClass:(Class)controllerClass forFieldClass:(Class)fieldClass;
-
-
-@end
-
-
-@protocol FXFormFieldViewController <NSObject>
-
-@property (nonatomic, strong) FXFormField *field;
-
-@end
-
-
-@interface FXFormViewController : UIViewController <FXFormFieldViewController, FXFormControllerDelegate>
-
-@property (nonatomic, readonly) FXFormController *formController;
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
-
-@end
-
-
-#pragma mark -
-#pragma mark Views
-
-
-@protocol FXFormFieldCell <NSObject>
-
-@property (nonatomic, strong) FXFormField *field;
-
-@optional
-
-+ (CGFloat)heightForField:(FXFormField *)field width:(CGFloat)width;
-- (void)didSelectWithTableView:(UITableView *)tableView
-                    controller:(UIViewController *)controller;
-@end
-
-
-@interface FXFormBaseCell : UITableViewCell <FXFormFieldCell>
-
-- (void)setUp;
-- (void)update;
-- (void)didSelectWithTableView:(UITableView *)tableView
-                    controller:(UIViewController *)controller;
-@end
-
-
-@interface FXFormDefaultCell : FXFormBaseCell
-
-@end
-
-
-@interface FXFormTextFieldCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UITextField *textField;
-
-@end
-
-
-@interface FXFormTextViewCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UITextView *textView;
-
-@end
-
-
-@interface FXFormSwitchCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UISwitch *switchControl;
-
-@end
-
-
-@interface FXFormStepperCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UIStepper *stepper;
-
-@end
-
-
-@interface FXFormSliderCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UISlider *slider;
-
-@end
-
-
-@interface FXFormDatePickerCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UIDatePicker *datePicker;
-
-@end
-
-
-@interface FXFormImagePickerCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UIImageView *imagePickerView;
-@property (nonatomic, readonly) UIImagePickerController *imagePickerController;
-
-@end
-
-
-@interface FXFormOptionPickerCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UIPickerView *pickerView;
-
-@end
-
-
-@interface FXFormOptionSegmentsCell : FXFormBaseCell
-
-@property (nonatomic, readonly) UISegmentedControl *segmentedControl;
-
-@end
-
+#import "Models/NSObject+FXForms.h"
+#import "Models/FXForm.h"
+#import "Models/FXFormField.h"
+
+#import "Controllers/FXFormControllerDelegate.h"
+#import "Controllers/FXFormController.h"
+#import "Controllers/FXFormFieldViewController.h"
+#import "Controllers/FXFormViewController.h"
+
+#import "Views/FXFormFieldCell.h"
+#import "Views/FXFormBaseCell.h"
+#import "Views/FXFormDefaultCell.h"
+#import "Views/FXFormTextFieldCell.h"
+#import "Views/FXFormTextViewCell.h"
+#import "Views/FXFormSwitchCell.h"
+#import "Views/FXFormStepperCell.h"
+#import "Views/FXFormSliderCell.h"
+#import "Views/FXFormDatePickerCell.h"
+#import "Views/FXFormImagePickerCell.h"
+#import "Views/FXFormOptionPickerCell.h"
+#import "Views/FXFormOptionSegmentsCell.h"
 
 #pragma GCC diagnostic pop
 
